@@ -1,0 +1,12 @@
+<aside class="sidebar">
+  <div id="side-navigation" class="nano">
+    <ul class="nano-content">
+      <li class="link"  [ngClass]="{'active': menuItem === activeMenuItem}" *ngFor="let menuItem of menuItems" (click)="itemChanged(menuItem)">
+        <a>
+          <i class="fa fa-dashboard"></i>
+          <span>{{menuItem.article.title}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>

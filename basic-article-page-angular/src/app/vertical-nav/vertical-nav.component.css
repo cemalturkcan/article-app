@@ -1,0 +1,41 @@
+* {
+  font-family: Inter, sans-serif;
+  padding-left: 0;
+  outline: none;
+  animation-duration: 2s;
+}
+.sidebar {
+  background: #292d32;
+  height: calc(100vh - 56px);
+}
+ul{
+  padding: 0;
+  margin-top: 20px;
+  height: 100%;
+}
+ul li {
+  list-style-type: none;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: 0;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.link.active {
+  background: linear-gradient(92deg, rgba(89, 95, 247, 0.31) -229%, transparent 94%);
+  border-left: 4px solid rgb(89, 95, 247);
+  color: rgb(186, 187, 252);
+}
+.link:hover {
+  background: linear-gradient(92deg, rgba(89, 95, 247, 0.32) -229%, transparent 94%);
+  color: rgb(186, 187, 252);
+}
+
+
+

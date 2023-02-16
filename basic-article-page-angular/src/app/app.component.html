@@ -1,0 +1,4 @@
+<app-horizontal-nav [menuItems]="topBarItems" (menuItemChangeEvent)="mainContentChangedEvent($event)" [activeMenuItem]="mainContent"></app-horizontal-nav>
+<app-vertical-nav class="left-bar" [menuItems]="leftBarItems" (menuItemChangeEvent)="mainContentChangedEvent($event)" [activeMenuItem]="mainContent"></app-vertical-nav>
+<app-main-content [mainContent]="mainContent"></app-main-content>
+<app-vertical-nav class="right-bar" [menuItems]="rightBarItems" (menuItemChangeEvent)="mainContentChangedEvent($event)" [activeMenuItem]="mainContent"></app-vertical-nav>
