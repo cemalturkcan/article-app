@@ -1,0 +1,17 @@
+server:
+  port: 3020
+spring:
+  application:
+    name: contentmanagement
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contentmanagement
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
